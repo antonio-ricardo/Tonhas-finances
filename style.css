@@ -1,0 +1,304 @@
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(243, 237, 237);
+    font-family: "sans-serif", "Poppins";
+}
+
+h1{
+    margin-top: 3.2rem;
+    margin-bottom: 0.8rem;
+    font-weight: normal;
+}
+
+#invisible{
+    opacity: 0%;
+    visibility: hidden;
+}
+/*Global */
+
+/*Cards*/
+#card{
+    background-color: white;
+    border-radius: 8px;
+    height: 6rem;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    width: 20rem;
+}
+
+#card h2{
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#card h3{
+    margin-left: 0.5rem;
+    margin-top: 0.3rem;
+
+}
+
+#card.total{
+    background-color: rgb(35, 219, 35);
+    color: white;
+}
+
+#card.total.s{
+    background-color: rgb(211, 17, 17);
+    color: white;
+}
+/*Cards*/
+
+/*money*/
+#money{
+    margin-bottom: 0.4rem;
+}
+/*money*/
+
+
+/*Container*/
+.container{
+    width: min(90vw, 800px);
+    margin: auto;
+}
+/*Container*/
+
+/*Header */
+header{
+    background-color: rgb(86, 169, 236);
+    text-align: center;
+    padding: 2rem 0 5rem;
+}
+
+#logo{
+    color: white;
+    font-weight: 100;
+    margin-top: 0;
+}
+/*Header*/
+
+/*Balanço*/
+#balance{
+    margin-top: -2.5rem;
+    margin-bottom: -5rem;
+    align-content: center;
+    display: flex;
+    margin-left: -5rem;
+}
+
+#balance h1{
+    visibility: hidden;
+}
+
+#balance h2{
+    font-size: smaller;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*Balanço*/
+
+/*transaçoes*/
+#transactions h1{
+    visibility: hidden;
+}
+
+/*transaçoes*/
+
+/*Table*/
+#data-table{
+    width: 100%;
+    border-spacing: 0 0.5rem;
+    opacity: 0.8;
+
+}
+
+table tr{
+    background-color: white;
+
+}
+#list-head{
+    width: 100%;
+}
+
+th#expensive{
+    color: red;
+}
+th#income{
+    color: rgb(19, 221, 19);
+}
+table thead{
+    opacity: 0.6;
+}
+
+#list-head{
+    height: 2.5rem;
+}
+#image{
+    padding-left: 0.5rem;
+    padding-right: 0.3rem;
+    padding-top: 0.5rem;
+}
+
+
+/*Table*/
+
+/*overlow*/
+.overlow{
+    visibility: hidden;
+}
+
+.s {
+    visibility: visible;
+}
+
+#overlow{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#block-overlow{
+    background-color: rgb(235, 230, 230);
+    position: relative;
+    height: 55%;
+    width: 50%;
+}
+
+#content-overlow h3{
+    margin-left: 0.5rem;
+    margin-top: 0.8rem;
+    font-weight: initial;
+}
+
+
+/*overlow*/
+
+/*Footer*/
+footer{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/*Footer*/
+
+/*Botões, inputs e links*/
+#newtransaction{
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#save-button{
+    background-color: green;
+    width: 10rem;
+    height: 3rem;
+    width: 40%;
+    height: 5rem;
+    margin-right: 2.5rem;
+    border-radius: 0.25rem;
+    color: white;
+    font-size: 1.3rem;
+    opacity: 0.7;
+    cursor: pointer;
+
+}
+#save-button:hover{
+    background-color: rgb(35, 216, 35);
+}
+
+div#form input{
+    height: 3rem;
+    width: 90%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: -4.5rem;
+    padding-left: 0.5rem;
+    font-size: 17px;
+}
+
+#cancel-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:rgb(236, 14, 14);
+    width: 40%;
+    height: 5rem;
+    border: 2px rgb(236, 14, 14) solid;
+    border-radius: 0.25rem;
+    opacity: 0.6;
+    margin-left: 0.8rem;
+}
+#cancel-button:hover{
+opacity: 0.8;    
+}
+
+div#form-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#deletor{
+    cursor: pointer;
+}
+/*Botões e links*/
+
+/*Respossividade*/
+@media (max-width: 540px){
+
+#balance{
+    margin: 0rem;
+    margin-top: -9rem;
+    margin-bottom: -3rem;
+    display: block;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+#card{
+    width: 95%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+#data-table{
+    display: block;
+    padding-left: 1.5;
+    padding-right: 1.5;
+    width: 1fr;
+    
+    overflow-x: auto;
+}
+th#expensive{
+    padding: 0 0.5rem 0 0.5rem;
+}
+#expensive.value{
+    padding: 0 3rem 0 0.5rem;
+}
+th#income{
+    padding: 0 3rem 0 0.5rem;
+}
+th{
+    width: 100%;
+}
+}
+#save-button{
+    margin-left: 1rem;
+}
+@media (min-height:700px){
+#block-overlow{
+    height: 20rem;
+}
+/*Respossividade*/
